@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to you   r CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        #contact {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            margin-bottom: 15px; /* Adds space below Contact Information */
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none; /* Removes black dots */
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Center & Style Contact Form */
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        /* Google Map */
+        .map-container {
+            margin-top: 30px;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Information</h1>
+    </header>
+    <main>
+        <section id="contact">
+            <h2>📞 Get in Touch</h2> <!-- Updated title -->
+            <p>Let's connect! Feel free to reach out via email or social platforms.</p>
+            <ul>
+                <li><strong>📍 Location :</strong> Ahmedabad, India</li>
+                <li><strong>📧 Email :</strong> nileshsharma.dp@gmail.com</li>
+                <li><strong>🌐 Website :</strong> <a href="https://yourportfolio.com" target="_blank">yourportfolio.com</a></li>
+                <li><strong>🔗 LinkedIn :</strong> <a href="https://www.linkedin.com/in/nilesh-sharma-8716725a/" target="_blank">linkedin.com/in/nilesh-sharma-8716725a/</a></li>
+                <li><strong>💻 GitHub :</strong> <a href="https://github.com/nileshsharma-dp" target="_blank">github.com/nileshsharma-dp</a></li>
+                <li><strong>📊 Kaggle :</strong> <a href="https://www.kaggle.com/nileshsharma1994" target="_blank">kaggle.com/nileshsharma1994</a></li>
+                <li><strong>📊 Facebook :</strong> <a href="https://www.facebook.com/profile.php?id=61574445213078" target="_blank">Facebook.com/profile.php?id=61574445213078</a></li>
+            </ul>
+        </section>        
+        
+        <p>Get in touch with me using the form below:</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Enter your message" required></textarea>
+
+            <button type="button" onclick="sendMail()">Send</button>
+        </form>
+
+        <!-- Google Maps Embed -->
+        <div class="map-container">
+            <h3>📍 Find Me Here</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117727.40947196988!2d72.45314059999999!3d23.0225053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84f198b7fce9%3A0xeaa40dbb52423f1f!2sAhmedabad%2C%20Gujarat%2C%20India!5e0!3m2!1sen!2sin!4v1710512740517!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </main>
+
+    <script src="script.js"></script> <!-- Link to your JS file -->
+</body>
+</html>
